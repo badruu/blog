@@ -10,7 +10,7 @@ class Config:
     MAIL_USERNAME='badruuu.n.97@gmail.com'
     MAIL_PASSWORD='Noorbadar79'
 
-class DecConfig(Config):
+class DevConfig(Config):
 
     pass
 
