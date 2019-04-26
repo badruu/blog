@@ -1,6 +1,7 @@
 export SECRET_KEY='1234567890'
 
-SQLALCHEMY_DATABASE_URI='sqlite:///site.db'
+SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://salaaxnoor:123@localhost/badru_pitches'
+
 
 MAIL_SERVER='smtp.googlemail.com'
 MAIL_PORT=587
