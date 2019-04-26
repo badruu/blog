@@ -2,18 +2,34 @@
 {% block content %}
 
 <div class="row">
-  <div class="col-md-4">
-      <div class="content-section">
-          <div class="media">
-            <img class="rounded-circle account-img" src="{{ image_file }}">
-            <div class="media-body">
-              <h2 class="account-heading">{{ current_user.username }}</h2>
-              <p class="text-secondary">{{ current_user.email }}</p>
+  <div class="col-md-3">
+      <div class="card mb-3" style="max-width: 540px;">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img id="photo-1" src="{{ url_for('static', filename='profile_pics/' + current_user.image_file) }}" class="card-img rounded-circle" alt="">
             </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h6 class="card-title">PROFILE</h6>
+                <p class="card-text">{{ current_user.username }}</p>
+                <p class="card-text"><small class="text-muted">BIO: </small></p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+        <div class="content-section">
+          <h3>Sidebar</h3>
+          <p class='text-muted'>You can put any information here you'd like.
+            <ul class="list-group">
+              <li class="list-group-item list-group-item-light">Latest Posts</li>
+              <li class="list-group-item list-group-item-light">Announcements</li>
+              <li class="list-group-item list-group-item-light">Calendars</li>
+              <li class="list-group-item list-group-item-light">etc</li>
+            </ul>
+          </p>
+        </div>
   </div>
-  <div class="col-md-6">
+  <div class="col-md-8">
       {% for post in posts.items %}
       <article class="media content-section">
         <img class="rounded-circle article-img" src="{{ url_for('static', filename='profile_pics/' + post.author.image_file) }}" alt="">
@@ -39,18 +55,6 @@
         {% endif %}
       {% endfor %}
       </div>
-      <div class="col-md-2">
-          <div class="content-section">
-            <h3>Sidebar</h3>
-            <p class='text-muted'>You can put any information here you'd like.
-              <ul class="list-group">
-                <li class="list-group-item list-group-item-light">Latest Posts</li>
-                <li class="list-group-item list-group-item-light">Announcements</li>
-                <li class="list-group-item list-group-item-light">Calendars</li>
-                <li class="list-group-item list-group-item-light">etc</li>
-              </ul>
-            </p>
-          </div>
-        </div>
+      
 </div>
 {% endblock content %}
