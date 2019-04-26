@@ -1,6 +1,6 @@
 export SECRET_KEY='1234567890'
 
-SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://salaaxnoor:123@localhost/badru_pitches'
+export SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://salaaxnoor:123@localhost/badru_pitches'
 
 
 MAIL_SERVER='smtp.googlemail.com'
