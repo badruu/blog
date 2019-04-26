@@ -18,6 +18,6 @@ class ProdConfig(Config):
     SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
 
 config_options={
-    'Development' :DevConfig,
+    'development' :DevConfig,
     'Production' :ProdConfig
 }
