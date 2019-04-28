@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_bcrypt import Bcrypt
 from flask_login import LoginManager
 from flask_mail import Mail
-from pitch.config import config_options
+from pitch.config import Config
 
 
 db = SQLAlchemy()
@@ -15,9 +15,9 @@ mail = Mail()
 
 
 
-def create_app(name):
+def create_app(config_class=Config):
     app = Flask(__name__)
-    app.config.from_object(config_options[name])
+    app.config.from_object(Config)
 
     db.init_app(app)
     bcrypt.init_app(app)

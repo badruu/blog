@@ -10,14 +10,3 @@ class Config:
     MAIL_USERNAME='badruuu.n.97@gmail.com'
     MAIL_PASSWORD='Noorbadar79'
 
-class DevConfig(Config):
-
-    DEBUG = True
-
-class ProdConfig(Config):
-    SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
-
-config_options={
-    'development' :DevConfig,
-    'production' :ProdConfig
-}
