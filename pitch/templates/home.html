@@ -38,7 +38,7 @@
           </div>
           <h2><a class="article-title" href="{{ url_for('posts.post', post_id=post.id)}}">{{ post.title }}</a></h2>
           <p class="article-content">{{ post.content }}</p>
-          <i class="fas fa-comment"><a href="{{ url_for('#') }}">Comment</a></i>
+          <i class="fas fa-comment"><a href="{{ url_for('comments.new_comment') }}">Comment</a></i>
         </div>
       </article>
       {% endfor %}
