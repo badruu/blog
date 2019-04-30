@@ -3,7 +3,7 @@ from flask_script import Manager,Server
 from flask_migrate import Migrate, MigrateCommand
 from pitch.models import User,Post,Comment
 
-app = create_app()
+app = create_app('Config')
 app.app_context().push()
 
 manager = Manager(app)

@@ -2,7 +2,7 @@ import os
 
 class Config:
     SECRET_KEY='1234567890'
-    SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://salaaxnoor:123@localhost/badru_pitches'
+    SQLALCHEMY_DATABASE_URI=os.environ.get('DATABASE_URL')
 
     MAIL_SERVER='smtp.googlemail.com'
     MAIL_PORT=587
@@ -10,3 +10,4 @@ class Config:
     MAIL_USERNAME='badruuu.n.97@gmail.com'
     MAIL_PASSWORD='Noorbadar79'
 
+    
