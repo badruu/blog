@@ -42,6 +42,7 @@ def update_post(post_id):
         form.content.data = post.content
     return render_template('create_post.html', title='Update pitch', form=form, legend= 'Update Pitch' )
 
+
 @posts.route("/post/<int:post_id>/delete", methods=['POST'])
 @login_required
 def delete_post(post_id):
