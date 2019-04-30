@@ -19,8 +19,13 @@ A password reset process whereby a link is sent to your email if you forget you 
 # Installation and Set-up
 1. Intall python3.7
 2. Install flask
-3. Fork the project from my github using the following link:https://github.com/badruu/news
+3. Fork the project from my github using the following link:
+```https://github.com/badruu/pitches
+```
 4. You can also view the deployed site by following the link below:
+```
+https://kamalpiches.herokuapp.com/
+```
 
 # Bugs
 There are no known bugs in the project as at now.
