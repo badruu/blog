@@ -1,11 +1,11 @@
-# PITCHES
+# BLOG
 
 This project was written in python3.7
 
 # created by: Badrudin Noor
 
 ## Description
-This is a webapp that can be used by a user to submit pitches, edit the pitches they've submitted and/or delete the pitches.
+This is a webapp that can be used by a user to submit BLOGS, edit the BLOGS they've submitted and/or delete the BLOGS.
 A user has to login/sign up using for them to add a pitch.
 A password reset process whereby a link is sent to your email if you forget you password is also an added feature.
 
@@ -20,7 +20,7 @@ A password reset process whereby a link is sent to your email if you forget you 
 1. Intall python3.7
 2. Install flask
 3. Fork the project from my github using the following link:
-```https://github.com/badruu/pitches
+```https://github.com/badruu/blog
 ```
 4. You can also view the deployed site by following the link below:
 ```
