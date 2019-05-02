@@ -9,21 +9,12 @@
               <div class="card-body">
                 <h6 class="card-title">PROFILE</h6>
                 <p class="card-text">{{ current_user.username }}</p>
-                <p class="card-text"><small class="text-muted">BIO: </small></p>
+                <p class="card-text"><small class="text-muted">Today's quote: {{ quote.quote }} </small>
+                  <cite>{{quote.author}}</cite>
+                </p>
               </div>
             </div>
           </div>
-        </div>
-        <div class="content-section">
-          <h3>Sidebar</h3>
-          <p class='text-muted'>You can put any information here you'd like.
-            <ul class="list-group">
-              <li class="list-group-item list-group-item-light">Latest Posts</li>
-              <li class="list-group-item list-group-item-light">Announcements</li>
-              <li class="list-group-item list-group-item-light">Calendars</li>
-              <li class="list-group-item list-group-item-light">etc</li>
-            </ul>
-          </p>
         </div>
   </div>
   <div class="col-md-8">
